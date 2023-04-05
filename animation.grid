@@ -1,0 +1,16 @@
+this is a proof of concept, animation
+---
+w=max(w,100)
+h=max(h,100)
+foo=foo+1
+foo=foo%min(w-10,h-10)
+foo=max(foo,10)
+---
+foo
+---
+foo
+---
+dc322f
+cb4b16
+b58900
+859900

@@ -1,0 +1,24 @@
+4 element grid, if window is sane size this will be 2 by 2
+if not 1x4 or 4x1
+---
+w=max(w,100)
+h=max(h,100)
+isver=w*2<h
+ishoz=h*2<w
+issquare=(!isver)&(!ishoz)
+a=w>h?w/4:h/4
+---
+isver?-1:w/2
+ishoz?a:-2
+ishoz?a*3:-3
+---
+ishoz?-1:h/2
+isver?a:-2
+isver?a*3:-3
+---
+dc322f
+cb4b16
+b58900
+859900
+---
+002b36

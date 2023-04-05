@@ -1,0 +1,14 @@
+this is a basic screen spilt
+the rect on the left will be called foo
+the rect on the right will be called bar
+---
+---
+w/2
+---
+---
+foo
+bar
+0,0..1,1]foobar
+left,top..right,bot]barfoo
+---
+foobar

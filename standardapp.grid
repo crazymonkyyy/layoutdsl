@@ -1,0 +1,27 @@
+this is my model for a bog standard app
+toggable but auto hide on small space tool bars, top leftside and a status bar
+2nd app zone if large enough
+---
+toptoggle
+sidetoggle
+bottoggle
+w=max(240,w)
+h=max(180,h)
+tophidden=!toptoggle | h < 720
+sidehidden=!sidetoggle | w < 1280
+bothidden=!bottoggle | h < 360
+sidebar=sidehidden?0:150
+mainarea=w-sidebar
+extrapanel=mainarea < (8*120) ? 0:mainarea/2
+---
+sidebarleft=sidebar
+mainarealeft=w-extrapanel
+---
+mainareatop=(!tophidden)*150
+mainareabot=h-(!bothidden)*16
+---
+left,top..right,mainareatop]d33682 topbar
+left,mainareatop..sidebarleft,mainareabot]6c71c4 sidebar
+sidebarleft,mainareatop..mainarealeft,mainareabot]dc322f main area
+mainarealeft,mainareatop..right,mainareabot]cb4b16 extra area
+left,mainareabot..right,bot]93a1a1 bottom status bar
